@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../static/1.jpg");
+  background-size: 1600px 900px;
+  background-color: #edeff2;
+  font-family: "Calibri", "Roboto", sans-serif;
+}
+
+.chat_window {
+  position: absolute;
+  width: calc(100% - 20px);
+  max-width: 800px;
+  height: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8;
+  overflow-y:auto;
+  border-style: groove;
+  border-color: #bcbdc0;
+}
+
+.top_menu {
+  background-color: #fff;
+  width: 100%;
+  height: 13%;
+  padding: 20px 0 15px;
+  box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
+}
+
+.top_menu .buttons .logo {
+  width: 70px;
+  height: 65px;
+  border-radius: 50%;
+  margin: -20px 0px 0px 2px;
+  position: absolute;
+}
+
+.top_menu .title {
+  text-align: center;
+  color: #bcbdc0;
+  font-size: 20px;
+}
+
+.messages {
+  position: relative;
+  list-style: none;
+  padding: 20px 10px 0 10px;
+  margin: 0;
+  height: 347px;
+  overflow: scroll;
+}
+
+.messages .message {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.message{
+  width: 24%;
+  padding: 10px;
+  margin:17px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+}
+.left{
+  float: left;
+  clear: both;
+  background-color: salmon;
+}
+.right{
+  float: right;
+  clear: both;
+  background-color: #c7eafc;
+}
+.send {
+  left:24%;
+  width: 52%;
+  background-color: #fff;
+  padding: 20px 20px;
+  position: absolute;
+  border-radius:10px;
+  bottom: 0;
+  padding-top:10px;
+}
+
+.send .send-container {
+  display: inline-block;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #bcbdc0;
+  width: calc(100% - 160px);
+  position: relative;
+  padding: 0 20px;
+}
+.send .send-container .messageInp {
+  border: none;
+  height: 100%;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+
+  outline-width: 0;
+  color: gray;
+}
+
+.send .btn {
+  width: 140px;
+  height: 50px;
+  left:90%;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #a3d063;
+  border: 2px solid #a3d063;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  text-align: center;
+  float:right;
+}
+
+.send .btn:hover {
+  color: #a3d063;
+  background-color: #fff;
+}
+
+.send .btn .text {
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+  line-height: 48px;
+}
